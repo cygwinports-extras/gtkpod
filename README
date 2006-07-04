@@ -1,0 +1,105 @@
+gtkpod
+------------------------------------------
+gtkpod is a platform independent Graphical User Interface for Apple's
+iPod using GTK2. It supports the first to fifth Generation including the
+iPod mini, iPod Photo, iPod Shuffle, iPod nano, and iPod Video.
+
+Runtime requirements:
+  cygwin-1.5.20-1
+  glib2-2.10.3-1
+  gtk2-x11-2.8.19-1
+  libglade2-2.5.1-1
+  libgpod0-0.3.2-1
+  libid3tag-0.15.1b-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.20-1
+  autoconf2.5-2.59-2
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.2.2-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  make-3.80-1
+  pkg-config-0.20-1
+  sed-4.1.5-1
+
+Canonical website:
+  http://www.gtkpod.org/
+
+Canonical download:
+  http://prdownloads.sourceforge.net/gtkpod/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gtkpod-0.99.4-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gtkpod-0.99.4-X.cygport all
+
+This will create:
+  /usr/src/gtkpod-0.99.4-X-src.tar.bz2
+  /usr/src/gtkpod-0.99.4-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/gtkpod.exe
+  /usr/share/doc/Cygwin/gtkpod-0.99.4.README
+  /usr/share/doc/gtkpod-0.99.4/AUTHORS
+  /usr/share/doc/gtkpod-0.99.4/COPYING
+  /usr/share/doc/gtkpod-0.99.4/ChangeLog
+  /usr/share/doc/gtkpod-0.99.4/INSTALL
+  /usr/share/doc/gtkpod-0.99.4/NEWS
+  /usr/share/doc/gtkpod-0.99.4/README
+  /usr/share/gtkpod/gtkpod.glade
+  /usr/share/gtkpod/gtkpod.gladep
+  /usr/share/gtkpod/pixmaps/gtkpod-add-dirs.png
+  /usr/share/gtkpod/pixmaps/gtkpod-add-files.png
+  /usr/share/gtkpod/pixmaps/gtkpod-add-playlists.png
+  /usr/share/gtkpod/pixmaps/gtkpod-icon-32.png
+  /usr/share/gtkpod/pixmaps/gtkpod-icon-32x32-2.png
+  /usr/share/gtkpod/pixmaps/gtkpod-icon-32x32.png
+  /usr/share/gtkpod/pixmaps/gtkpod-icon-48.png
+  /usr/share/gtkpod/pixmaps/gtkpod-icon-48x48.png
+  /usr/share/gtkpod/pixmaps/gtkpod-icon-64x64.png
+  /usr/share/gtkpod/pixmaps/gtkpod-logo.png
+  /usr/share/gtkpod/pixmaps/gtkpod-new-playlist.png
+  /usr/share/gtkpod/pixmaps/gtkpod-read.png
+  /usr/share/gtkpod/pixmaps/gtkpod-sync.png
+  /usr/share/gtkpod/pixmaps/gtkpod.glade
+  /usr/share/gtkpod/pixmaps/gtkpod.gladep
+  /usr/share/gtkpod/scripts/ldif2vcf.sh
+  /usr/share/gtkpod/scripts/mab2vcard
+  /usr/share/gtkpod/scripts/sync-abook.sh
+  /usr/share/gtkpod/scripts/sync-evocalendar.sh
+  /usr/share/gtkpod/scripts/sync-evolution.sh
+  /usr/share/gtkpod/scripts/sync-kaddressbook.sh
+  /usr/share/gtkpod/scripts/sync-knotes.sh
+  /usr/share/gtkpod/scripts/sync-korganizer.sh
+  /usr/share/gtkpod/scripts/sync-ldif.sh
+  /usr/share/gtkpod/scripts/sync-notes.sh
+  /usr/share/gtkpod/scripts/sync-palm-jppy.py
+  /usr/share/gtkpod/scripts/sync-thunderbird.sh
+  /usr/share/gtkpod/scripts/sync-webcalendar.sh
+  /usr/share/locale/de/LC_MESSAGES/gtkpod.mo
+  /usr/share/locale/fr/LC_MESSAGES/gtkpod.mo
+  /usr/share/locale/he/LC_MESSAGES/gtkpod.mo
+  /usr/share/locale/it/LC_MESSAGES/gtkpod.mo
+  /usr/share/locale/ja/LC_MESSAGES/gtkpod.mo
+  /usr/share/locale/sv/LC_MESSAGES/gtkpod.mo
+
+------------------
+
+Port Notes:
+
+----- version 0.99.4-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
