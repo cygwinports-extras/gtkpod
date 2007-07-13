@@ -6,14 +6,21 @@ iPod mini, iPod Photo, iPod Shuffle, iPod nano, and iPod Video.
 
 Runtime requirements:
   cygwin-1.5.24-2
-  gdk-pixbuf2-2.10.12-1
-  glib2-2.12.12-1
-  gtk2-x11-2.10.12-1
-  libglade2-2.6.0-1
-  libgpod1-0.4.2-1
+  gdk-pixbuf2-2.10.13-1
+  glib2-2.12.12-2
+  gnome-vfs2-2.18.1-1
+  gtk2-x11-2.10.13-1
+  libFLAC8-1.1.4-1
+  libcurl4-7.16.3-1
+  libglade2-2.6.1-1
+  libgnomecanvas2-2.14.0-1
+  libgpod2-0.5.2-1
   libid3tag-0.15.1b-3
   libintl8-0.15-1
   libmpeg4ip0-1.5.0.1-1
+  libvorbis0-1.1.1-1
+  libvorbisfile3-1.1.1-1
+  libxml2-2.6.28-2
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -37,45 +44,52 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtkpod-0.99.8-X-src.tar.bz2
+  unpack gtkpod-0.99.10-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtkpod-0.99.8-X.cygport all
+  cygport ./gtkpod-0.99.10-X.cygport all
 
 This will create:
-  /usr/src/gtkpod-0.99.8-X-src.tar.bz2
-  /usr/src/gtkpod-0.99.8-X.tar.bz2
+  /usr/src/gtkpod-0.99.10-X-src.tar.bz2
+  /usr/src/gtkpod-0.99.10-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
+  /etc/postinstall/gtkpod.sh
   /usr/bin/gtkpod.exe
-  /usr/share/doc/Cygwin/gtkpod-0.99.8.README
-  /usr/share/doc/gtkpod-0.99.8/AUTHORS
-  /usr/share/doc/gtkpod-0.99.8/COPYING
-  /usr/share/doc/gtkpod-0.99.8/ChangeLog
-  /usr/share/doc/gtkpod-0.99.8/INSTALL
-  /usr/share/doc/gtkpod-0.99.8/NEWS
-  /usr/share/doc/gtkpod-0.99.8/README
-  /usr/share/gtkpod/gtkpod.glade
-  /usr/share/gtkpod/gtkpod.gladep
-  /usr/share/gtkpod/pixmaps/gtkpod-add-dirs.png
-  /usr/share/gtkpod/pixmaps/gtkpod-add-files.png
-  /usr/share/gtkpod/pixmaps/gtkpod-add-playlists.png
-  /usr/share/gtkpod/pixmaps/gtkpod-icon-32.png
-  /usr/share/gtkpod/pixmaps/gtkpod-icon-32x32-2.png
-  /usr/share/gtkpod/pixmaps/gtkpod-icon-32x32.png
-  /usr/share/gtkpod/pixmaps/gtkpod-icon-48.png
-  /usr/share/gtkpod/pixmaps/gtkpod-icon-48x48.png
-  /usr/share/gtkpod/pixmaps/gtkpod-icon-64x64.png
-  /usr/share/gtkpod/pixmaps/gtkpod-logo.png
-  /usr/share/gtkpod/pixmaps/gtkpod-new-playlist.png
-  /usr/share/gtkpod/pixmaps/gtkpod-read.png
-  /usr/share/gtkpod/pixmaps/gtkpod-sync.png
-  /usr/share/gtkpod/pixmaps/gtkpod.glade
-  /usr/share/gtkpod/pixmaps/gtkpod.gladep
+  /usr/share/applications/gtkpod.desktop
+  /usr/share/doc/Cygwin/gtkpod-0.99.10.README
+  /usr/share/doc/gtkpod-0.99.10/AUTHORS
+  /usr/share/doc/gtkpod-0.99.10/COPYING
+  /usr/share/doc/gtkpod-0.99.10/ChangeLog
+  /usr/share/doc/gtkpod-0.99.10/INSTALL
+  /usr/share/doc/gtkpod-0.99.10/NEWS
+  /usr/share/doc/gtkpod-0.99.10/README
+  /usr/share/gtkpod/data/cdshine.png
+  /usr/share/gtkpod/data/cdshine_main.png
+  /usr/share/gtkpod/data/default-cover.png
+  /usr/share/gtkpod/data/gtkpod-add-dirs.png
+  /usr/share/gtkpod/data/gtkpod-add-files.png
+  /usr/share/gtkpod/data/gtkpod-add-playlists.png
+  /usr/share/gtkpod/data/gtkpod-icon-32-2.png
+  /usr/share/gtkpod/data/gtkpod-icon-32.png
+  /usr/share/gtkpod/data/gtkpod-icon-48.png
+  /usr/share/gtkpod/data/gtkpod-logo.png
+  /usr/share/gtkpod/data/gtkpod-new-playlist.png
+  /usr/share/gtkpod/data/gtkpod-read.png
+  /usr/share/gtkpod/data/gtkpod-sync.png
+  /usr/share/gtkpod/data/gtkpod.glade
+  /usr/share/gtkpod/scripts/convert-flac2m4a.sh
+  /usr/share/gtkpod/scripts/convert-flac2mp3.sh
+  /usr/share/gtkpod/scripts/convert-m4a2mp3.sh
+  /usr/share/gtkpod/scripts/convert-mp32m4a.sh
+  /usr/share/gtkpod/scripts/convert-ogg2m4a.sh
+  /usr/share/gtkpod/scripts/convert-ogg2mp3.sh
+  /usr/share/gtkpod/scripts/convert-wav2m4a.sh
+  /usr/share/gtkpod/scripts/convert-wav2mp3.sh
   /usr/share/gtkpod/scripts/ldif2vcf.sh
   /usr/share/gtkpod/scripts/mab2vcard
   /usr/share/gtkpod/scripts/sync-abook.sh
@@ -91,6 +105,9 @@ Files included in the binary package:
   /usr/share/gtkpod/scripts/sync-thunderbird.sh
   /usr/share/gtkpod/scripts/sync-tomboy.sh
   /usr/share/gtkpod/scripts/sync-webcalendar.sh
+  /usr/share/icons/hicolor/32x32/apps/gtkpod.png
+  /usr/share/icons/hicolor/48x48/apps/gtkpod.png
+  /usr/share/icons/hicolor/64x64/apps/gtkpod.png
   /usr/share/locale/de/LC_MESSAGES/gtkpod.mo
   /usr/share/locale/es/LC_MESSAGES/gtkpod.mo
   /usr/share/locale/fr/LC_MESSAGES/gtkpod.mo
@@ -102,6 +119,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.99.10-1 -----
+Version bump.
 
 ----- version 0.99.8-2 -----
 Rebuilt for libgpod-0.4.2.
