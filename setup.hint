@@ -1,5 +1,5 @@
 category: Audio Gnome
-requires: cygwin glib2 gnome-vfs2 gtk2-x11 libFLAC8 libcurl4 libglade2 libgnomecanvas2 libgpod2 libid3tag libintl8 libmp4v2_0 libvorbis0 libvorbisfile3 libxml2
+requires: cygwin glib2 gnome-vfs2 gtk2-x11 libFLAC8 libcurl4 libglade2 libgnomecanvas2 libgpod3 libid3tag libintl8 libmp4v2_0 libvorbis0 libvorbisfile3 libxml2
 sdesc: "GTK interface for the iPod"
 ldesc: "gtkpod is a platform independent Graphical User Interface for
 Apple's iPod using GTK2. It supports the first to fifth Generation

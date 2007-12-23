@@ -1,0 +1,5 @@
+inherit gnome2
+
+DESCRIPTION="GTK interface for the iPod"
+HOMEPAGE="http://www.gtkpod.org/"
+SRC_URI="mirror://sourceforge/gtkpod/${P}.tar.gz"
