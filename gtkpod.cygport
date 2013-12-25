@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="gtkpod"
-VERSION=0.99.14
+VERSION=2.1.4
 RELEASE=1
 CATEGORY="Audio"
 SUMMARY="GTK interface for the iPod"
@@ -10,4 +10,11 @@ Apple's iPod using GTK2. It supports the first to fifth Generation including
 the iPod mini, iPod Photo, iPod Shuffle, iPod nano, and iPod Video."
 HOMEPAGE="http://www.gtkpod.org/"
 SRC_URI="mirror://sourceforge/gtkpod/${NAME}-${VERSION}.tar.gz"
-PATCH_URI="0.99.12-libvorbis.patch"
+PATCH_URI="
+	2.1.4-cygwin.patch
+	2.1.4-no-undefined.patch
+"
+
+PKG_NAMES="${NAME} ${NAME}-devel"
+gtkpod_CONTENTS="etc/ usr/bin/ usr/lib/${NAME}/ usr/share/"
+gtkpod_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
