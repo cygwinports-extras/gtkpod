@@ -2,7 +2,7 @@ inherit gnome2
 
 NAME="gtkpod"
 VERSION=2.1.4
-RELEASE=1
+RELEASE=2
 CATEGORY="Audio"
 SUMMARY="GTK interface for the iPod"
 DESCRIPTION="gtkpod is a platform independent Graphical User Interface for
