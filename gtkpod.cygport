@@ -2,7 +2,7 @@ inherit gnome2
 
 NAME="gtkpod"
 VERSION=2.1.4
-RELEASE=2
+RELEASE=3
 CATEGORY="Audio"
 SUMMARY="GTK interface for the iPod"
 DESCRIPTION="gtkpod is a platform independent Graphical User Interface for
@@ -13,6 +13,7 @@ SRC_URI="mirror://sourceforge/gtkpod/${NAME}-${VERSION}.tar.gz"
 PATCH_URI="
 	2.1.4-cygwin.patch
 	2.1.4-no-undefined.patch
+	2.1.4-vpath.patch
 "
 
 PKG_NAMES="${NAME} ${NAME}-devel"
