@@ -1,0 +1,11 @@
+--- origsrc/gtkpod-2.1.4/configure.ac	2013-08-25 16:26:42.000000000 -0500
++++ src/gtkpod-2.1.4/configure.ac	2015-01-05 15:13:34.217338400 -0600
+@@ -17,7 +17,7 @@ dnl libtool versioning
+ LIBGTKPOD_SO_VERSION="2:0:1"
+ LIBATOMIC_PARSLEY_SO_VERSION="0:1:0"
+ 
+-LIBGTKPOD_VERSION=`./version.sh`
++LIBGTKPOD_VERSION=`$srcdir/version.sh`
+ 
+ AC_SUBST(LIBGTKPOD_SO_VERSION)
+ AC_SUBST(LIBGTKPOD_VERSION)
